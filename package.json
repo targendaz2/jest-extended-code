@@ -1,0 +1,69 @@
+{
+  "name": "jest-extended-code",
+  "version": "0.1.0",
+  "description": "Adds code and script matchers to Jest.",
+  "type": "module",
+  "packageManager": "yarn@4.3.1",
+  "keywords": [
+    "assert",
+    "assertions",
+    "child-process",
+    "jest",
+    "process",
+    "test",
+    "testing"
+  ],
+  "homepage": "https://github.com/targendaz2/jest-extended-code#readme",
+  "bugs": {
+    "url": "https://github.com/targendaz2/jest-extended-code/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "author": "David G Rosenberg <david@dgrdev.com>",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "dist"
+  },
+  "repository": "github:targendaz2/jest-extended-code",
+  "scripts": {
+    "build": "rm -rf dist && tsc --build",
+    "prepack": "yarn build",
+    "test": "NODE_OPTIONS=\"--experimental-vm-modules\" NODE_NO_WARNINGS=1 jest --passWithNoTests"
+  },
+  "dependencies": {
+    "@prettier/sync": "^0.5.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.56.0",
+    "@jest/globals": "^29.7.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.14.9",
+    "@types/tmp": "^0.2.6",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "jest": "^29.7.0",
+    "jest-extended-fs": "^1.0.2",
+    "prettier": "^3.3.2",
+    "tmp": "^0.2.3",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0"
+  },
+  "peerDependencies": {
+    "jest": "^29.7.0"
+  },
+  "peerDependenciesMeta": {
+    "jest": {
+      "optional": false
+    }
+  },
+  "engines": {
+    "node": "^22.0.0"
+  }
+}
