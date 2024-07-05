@@ -1,6 +1,6 @@
 {
   "name": "jest-extended-code",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Adds code and script matchers to Jest.",
   "type": "module",
   "packageManager": "yarn@4.3.1",
@@ -24,6 +24,7 @@
     "dist/"
   ],
   "author": "David G Rosenberg <david@dgrdev.com>",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "directories": {
     "lib": "dist"
