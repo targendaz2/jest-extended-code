@@ -5,7 +5,7 @@
 ![NPM Version](https://img.shields.io/npm/v/jest-extended-code?logo=npm&logoColor=%23999999)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/targendaz2/jest-extended-code/test.yml?logo=github&label=tests&logoColor=%23999999)
 
-This package adds child process matchers to [Jest](https://jestjs.io).
+This package adds code and script matchers to [Jest](https://jestjs.io).
 
 ## Installation
 
