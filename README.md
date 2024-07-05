@@ -19,29 +19,19 @@ npm install -D jest jest-extended-code
 
 ### Individual Matchers
 
-In your Jest configuration file (e.g. `jest.config.ts`), do the following for each matcher you want to enable:
+In your Jest configuration file (e.g. `jest.config.ts`), add the matcher to the [`setupFilesAfterEnv`](setupFilesAfterEnv) setting.
 
-1. Import the matcher.
-
-    ```TypeScript
-    import 'jest-extended-code/matchers/toOutput.js';
-    ```
-
-2. Add the matcher to the [`setupFilesAfterEnv`](setupFilesAfterEnv) setting.
-
-    ```TypeScript
-    const config = {
-        setupFilesAfterEnv = ['jest-extended-code/matchers/toOutput.js']
-    };
-    ```
+```TypeScript
+const config = {
+    setupFilesAfterEnv = ['jest-extended-code/matchers/toOutput.js']
+};
+```
 
 ### All Matchers
 
 Follow the "Individual Matchers" instructions above using `jest-extended-code` instead of any specific matcher.
 
 ```TypeScript
-import 'jest-extended-code';
-
 const config = {
     setupFilesAfterEnv = ['jest-extended-code']
 };
@@ -49,6 +39,7 @@ const config = {
 
 ## Matchers
 
+- `.toEqualCode()`
 - `.toOutput()`
 
 ## Contributing
