@@ -8,8 +8,10 @@
     "assert",
     "assertions",
     "child-process",
+    "code",
     "jest",
     "process",
+    "syntax",
     "test",
     "testing"
   ],
