@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, test } from '@jest/globals';
+import { ExecutionError } from 'error-wave';
 import 'jest-extended-fs';
-import { ExecutionError } from '../../src/errors.js';
 import '../../src/matchers/toOutput.js';
 import { createTmpFile } from '../fixtures.js';
 

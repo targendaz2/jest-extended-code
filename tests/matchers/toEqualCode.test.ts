@@ -1,5 +1,5 @@
 import { describe, expect, test } from '@jest/globals';
-import { ValueError } from '../../src/errors.js';
+import { ValueError } from 'error-wave';
 import '../../src/matchers/toEqualCode.js';
 
 const code = 'console.log("Hello, world!");';

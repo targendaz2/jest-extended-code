@@ -1,9 +1,9 @@
 import cp from 'node:child_process';
 import { expect } from '@jest/globals';
+import { ExecutionError } from 'error-wave';
 import type { MatcherFunction } from 'expect';
 import utils from 'jest-matcher-utils';
-import { ExecutionError } from '../errors.js';
-import { assertPathIsFile } from '../lib/assertions.js';
+import { assertPathIsFile } from 'proveit';
 
 const toOutput: MatcherFunction<[output: string, interpreter?: string]> =
     function (actual, output, interpreter = 'node') {

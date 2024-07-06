@@ -1105,12 +1105,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.14.9":
+"@types/node@npm:*":
   version: 20.14.9
   resolution: "@types/node@npm:20.14.9"
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: 10c0/911ffa444dc032897f4a23ed580c67903bd38ea1c5ec99b1d00fa10b83537a3adddef8e1f29710cbdd8e556a61407ed008e06537d834e48caf449ce59f87d387
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.14.10":
+  version: 20.14.10
+  resolution: "@types/node@npm:20.14.10"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10c0/0b06cff14365c2d0085dc16cc8cbea5c40ec09cfc1fea966be9eeecf35562760bfde8f88e86de6edfaf394501236e229d9c1084fad04fb4dec472ae245d8ae69
   languageName: node
   linkType: hard
 
@@ -1930,6 +1939,13 @@ __metadata:
   dependencies:
     is-arrayish: "npm:^0.2.1"
   checksum: 10c0/ba827f89369b4c93382cfca5a264d059dfefdaa56ecc5e338ffa58a6471f5ed93b71a20add1d52290a4873d92381174382658c885ac1a2305f7baca363ce9cce
+  languageName: node
+  linkType: hard
+
+"error-wave@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "error-wave@npm:0.1.0"
+  checksum: 10c0/67e602a92f06ac0772277d24bd6da11752bcb8d8549e19092c1d9ab6ea55c5fd44342791befa3d371379f0f1ff821573ce6230df282774b2dc820d4c5651f817
   languageName: node
   linkType: hard
 
@@ -2901,13 +2917,15 @@ __metadata:
     "@tsconfig/node22": "npm:^22.0.0"
     "@types/eslint-config-prettier": "npm:^6.11.3"
     "@types/eslint__js": "npm:^8.42.3"
-    "@types/node": "npm:^20.14.9"
+    "@types/node": "npm:^20.14.10"
     "@types/tmp": "npm:^0.2.6"
+    error-wave: "npm:^0.1.0"
     eslint: "npm:^8.56.0"
     eslint-config-prettier: "npm:^9.1.0"
     jest: "npm:^29.7.0"
-    jest-extended-fs: "npm:^1.0.2"
+    jest-extended-fs: "npm:^1.0.3"
     prettier: "npm:^3.3.2"
+    proveit: "npm:^0.1.0"
     tmp: "npm:^0.2.3"
     ts-jest: "npm:^29.1.5"
     ts-node: "npm:^10.9.2"
@@ -2921,15 +2939,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"jest-extended-fs@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "jest-extended-fs@npm:1.0.2"
+"jest-extended-fs@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "jest-extended-fs@npm:1.0.3"
+  dependencies:
+    error-wave: "npm:^0.1.0"
+    proveit: "npm:^0.1.0"
   peerDependencies:
     jest: ^29.7.0
   peerDependenciesMeta:
     jest:
       optional: false
-  checksum: 10c0/dbe332c6be12ec26ef50517df06cd5f3d453708c999d76ec03c0b5b404e29759a408e71c6dd8fc5d964748e437d91f9f542aabde3b4c4d84396ef91daf61473f
+  checksum: 10c0/1e35c39d446696873d674a040ce517c0fc42e6be90957d68b50ff7489ffe5c01abea0f0c8d8cad943eeb5f35a08688f23a7bdbb774acfb4ce37091fd668a2d16
   languageName: node
   linkType: hard
 
@@ -3920,6 +3941,15 @@ __metadata:
     kleur: "npm:^3.0.3"
     sisteransi: "npm:^1.0.5"
   checksum: 10c0/16f1ac2977b19fe2cf53f8411cc98db7a3c8b115c479b2ca5c82b5527cd937aa405fa04f9a5960abeb9daef53191b53b4d13e35c1f5d50e8718c76917c5f1ea4
+  languageName: node
+  linkType: hard
+
+"proveit@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "proveit@npm:0.1.0"
+  dependencies:
+    error-wave: "npm:^0.1.0"
+  checksum: 10c0/7c30dcdc90820ae84ccc17855d1f01afd1cada6559c1e3efeb039f940df6d2e404d45193419284c6ff182d4df9c0c001103dd420e60509302d4922fe1f4d1067
   languageName: node
   linkType: hard
 

@@ -1,7 +1,7 @@
 import { expect } from '@jest/globals';
+import { ValueError } from 'error-wave';
 import type { MatcherFunction } from 'expect';
 import utils from 'jest-matcher-utils';
-import { ValueError } from '../errors.js';
 import { formatCode } from '../lib/formatters.js';
 import { serializeCode } from '../lib/serializers.js';
 

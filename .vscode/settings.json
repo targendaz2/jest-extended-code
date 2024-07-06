@@ -11,10 +11,10 @@
   "jest.outputConfig": "test-results-based",
   "jest.runMode": "on-demand",
   "markdownlint.config": {
-    "extends": "./.markdownlintrc"
+    "extends": "./.markdownlintrc.json"
   },
   "material-icon-theme.files.associations": {
-    ".markdownlintrc": "Settings",
+    ".markdownlintrc.json": "Settings",
     "cspell.json": "Settings"
   },
   "material-icon-theme.folders.associations": {
